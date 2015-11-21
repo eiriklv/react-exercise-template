@@ -10,23 +10,11 @@ const {
   Simulate
 } = require('react-addons-test-utils');
 
-describe('CheckboxWithLabel', () => {
-  it('changes the text after click', () => {
-    /**
-     * Here we're creating an injector that can mock specific parts
-     * of the CheckboxWithLabel components
-     *
-     * check out [inject-loader](https://www.npmjs.com/package/inject-loader) for more info
-     */
-    const Injector = require(`inject!../../src/chapter-1/CheckboxWithLabel.jsx`);
-
-    /**
-     * Here we're creating the actual mocked component class
-     */
-    const CheckboxWithLabel = Injector({
-      './BigComplicatedComponent.jsx': reactStub,
-      './OtherBigComplicatedComponent.jsx': reactStub,
-    });
+describe('Exercise 4 - My first component with state', () => {
+  it('render what has been set as initial state', () => {
+    const {
+      CheckboxWithLabel
+    } = require('../../src/chapter-1/Exercise-4.jsx');
 
     // Render a checkbox with label in the document
     const checkbox = renderIntoDocument(
@@ -54,8 +42,8 @@ describe('CheckboxWithLabel', () => {
 
     assert.equal(
       findDOMNode(label).textContent,
-      'On',
-      'Did not have correct label after click'
+      'Off',
+      'Responded to click event, but shouldn\'t'
     );
   });
 });

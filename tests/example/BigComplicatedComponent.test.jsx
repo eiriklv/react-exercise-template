@@ -5,7 +5,8 @@ const {
 } = require('react-dom');
 
 const {
-  renderIntoDocument
+  renderIntoDocument,
+  createRenderer
 } = require('react-addons-test-utils');
 
 describe('BigComplicatedComponent', () => {
@@ -20,6 +21,7 @@ describe('BigComplicatedComponent', () => {
     assert.equal(
       findDOMNode(component).textContent,
       '42',
+      global.hints ? null : 'Value was wrong'
     );
   });
 });

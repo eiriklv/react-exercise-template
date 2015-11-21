@@ -45,7 +45,7 @@ describe('CheckboxWithLabel', () => {
     assert.equal(
       findDOMNode(label).textContent,
       'Off',
-      'Did not have correct initial label'
+      global.hints ? null : 'Did not have correct initial label'
     );
 
     // Simulate a click and verify that it is now On
@@ -55,7 +55,7 @@ describe('CheckboxWithLabel', () => {
     assert.equal(
       findDOMNode(label).textContent,
       'On',
-      'Did not have correct label after click'
+      global.hints ? null : 'Did not have correct label after click'
     );
   });
 });

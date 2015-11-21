@@ -14,7 +14,7 @@ describe('Exercise 5 - My first component with state and event handling', () => 
   it('changes the output text after one click', () => {
     const {
       CheckboxWithLabel
-    } = require('../../src/chapter-1/Exercise-5.jsx');
+    } = require(`../../src/${__version__}/chapter-1/Exercise-5.jsx`);
 
     // Render a checkbox with label in the document
     const checkbox = renderIntoDocument(
@@ -50,7 +50,7 @@ describe('Exercise 5 - My first component with state and event handling', () => 
   it('changes the output text after two clicks', () => {
     const {
       CheckboxWithLabel
-    } = require('../../src/chapter-1/Exercise-5.jsx');
+    } = require(`../../src/${__version__}/chapter-1/Exercise-5.jsx`);
 
     // Render a checkbox with label in the document
     const checkbox = renderIntoDocument(

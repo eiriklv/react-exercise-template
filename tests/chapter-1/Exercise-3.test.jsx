@@ -14,7 +14,7 @@ describe('Exercise 3 - My first component with props', () => {
 
     const {
       MyFirstComponentWithProps
-    } = require('../../src/chapter-1/Exercise-3.jsx');
+    } = require(`../../src/${__version__}/chapter-1/Exercise-3.jsx`);
 
     renderer.render(
       <MyFirstComponentWithProps
@@ -41,7 +41,7 @@ describe('Exercise 3 - My first component with props', () => {
 
     const {
       MyFirstComponentWithProps
-    } = require('../../src/chapter-1/Exercise-3.jsx');
+    } = require(`../../src/${__version__}/chapter-1/Exercise-3.jsx`);
 
     renderer.render(
       <MyFirstComponentWithProps
@@ -68,7 +68,7 @@ describe('Exercise 3 - My first component with props', () => {
 
     const {
       MyFirstComponentWithProps
-    } = require('../../src/chapter-1/Exercise-3.jsx');
+    } = require(`../../src/${__version__}/chapter-1/Exercise-3.jsx`);
 
     renderer.render(
       <MyFirstComponentWithProps

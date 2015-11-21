@@ -14,7 +14,7 @@ describe('Exercise 2 - My first component with classes', () => {
 
     const {
       MyFirstComponentWithClasses
-    } = require('../../src/chapter-1/Exercise-2.jsx');
+    } = require(`../../src/${__version__}/chapter-1/Exercise-2.jsx`);
 
     renderer.render(
       <MyFirstComponentWithClasses />

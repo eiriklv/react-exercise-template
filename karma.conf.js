@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 var webpackConfig = require('./webpack.config.js');
 
 var exerciseBundle = process.argv[6] || '';
@@ -39,6 +40,12 @@ module.exports = function (config) {
     // Kind of a copy of your webpack config
     webpack: {
       devtool: 'inline-source-map',
+
+      plugins: [
+        new webpack.DefinePlugin({
+          '__version__': JSON.stringify(process.argv[7])
+        })
+      ],
 
       module: {
         loaders: webpackConfig.module.loaders

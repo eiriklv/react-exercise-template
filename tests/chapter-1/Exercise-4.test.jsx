@@ -14,7 +14,7 @@ describe('Exercise 4 - My first component with state', () => {
   it('render what has been set as initial state', () => {
     const {
       CheckboxWithLabel
-    } = require('../../src/chapter-1/Exercise-4.jsx');
+    } = require(`../../src/${__version__}/chapter-1/Exercise-4.jsx`);
 
     // Render a checkbox with label in the document
     const checkbox = renderIntoDocument(

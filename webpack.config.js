@@ -10,7 +10,8 @@ module.exports = {
   devtool: 'inline-source-map',
 
   entry: {
-    'bundle-chapter-1': './src/chapter-1/__entry.js'
+    'bundle-exercise-chapter-1': './src/exercises/chapter-1/__entry.js',
+    'bundle-solution-chapter-1': './src/solutions/chapter-1/__entry.js'
   },
 
   output: {

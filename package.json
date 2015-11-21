@@ -9,7 +9,8 @@
     "watch:test": "karma start --no-single-run --browsers Firefox",
     "test:lint": "eslint src/**/*.js*",
     "pretest": "npm run test:lint",
-    "exercise-1": "npm run watch:test -- -1"
+    "exercise:1": "npm run watch:test -- -1 exercises",
+    "solution:1": "npm run watch:test -- -1 solutions"
   },
   "dependencies": {
     "classnames": "^2.1.3",

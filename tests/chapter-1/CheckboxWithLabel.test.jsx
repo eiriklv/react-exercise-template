@@ -18,7 +18,7 @@ describe('CheckboxWithLabel', () => {
      *
      * check out [inject-loader](https://www.npmjs.com/package/inject-loader) for more info
      */
-    const Injector = require(`inject!../src/components/CheckboxWithLabel.jsx`);
+    const Injector = require(`inject!../../src/chapter-1/CheckboxWithLabel.jsx`);
 
     /**
      * Here we're creating the actual mocked component class

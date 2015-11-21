@@ -9,14 +9,14 @@ var publicDir = path.join(__dirname, '/public/')
 module.exports = {
   devtool: 'inline-source-map',
 
-  entry: [
-    './src/entry'
-  ],
+  entry: {
+    'bundle-chapter-1': './src/chapter-1/__entry.js'
+  },
 
   output: {
     path: publicDir,
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
 
   module: {

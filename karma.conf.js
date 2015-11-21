@@ -1,5 +1,7 @@
 var webpackConfig = require('./webpack.config.js');
 
+var exerciseBundle = process.argv[6] || '';
+
 module.exports = function (config) {
   config.set({
     // Run tests in Chrome and Firefox
@@ -13,12 +15,12 @@ module.exports = function (config) {
 
     // Just load this file
     files: [
-      'tests/bundle.js',
+      'tests/chapter' + exerciseBundle + '/__test-bundle.js',
     ],
 
     // Preprocess with webpack and our sourcemap loader
     preprocessors: {
-      'tests/bundle.js': ['webpack', 'sourcemap']
+      ['tests/chapter' + exerciseBundle + '/__test-bundle.js']: ['webpack', 'sourcemap']
     },
 
     // Report results in this format

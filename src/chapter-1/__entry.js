@@ -1,6 +1,6 @@
 const ReactDOM = require('react-dom');
 
-const App = require('./components/App.jsx');
+const App = require('./__App.jsx');
 
 ReactDOM.render(
   <App/>,

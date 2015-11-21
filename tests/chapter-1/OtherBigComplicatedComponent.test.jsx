@@ -11,7 +11,7 @@ const {
 
 describe('OtherBigComplicatedComponent', () => {
   it('outputs what it should (dom)', () => {
-    const OtherBigComplicatedComponent = require('../src/components/OtherBigComplicatedComponent.jsx');
+    const OtherBigComplicatedComponent = require('../../src/chapter-1/OtherBigComplicatedComponent.jsx');
 
     // Render a checkbox with label in the document
     const component = renderIntoDocument(
@@ -25,7 +25,7 @@ describe('OtherBigComplicatedComponent', () => {
   });
 
   it('outputs what it should (shallow)', () => {
-    const OtherBigComplicatedComponent = require('../src/components/OtherBigComplicatedComponent.jsx');
+    const OtherBigComplicatedComponent = require('../../src/chapter-1/OtherBigComplicatedComponent.jsx');
 
     let renderer = createRenderer();
     renderer.render(<OtherBigComplicatedComponent />);

@@ -116,11 +116,3 @@ assert.equalJSX = function(actual, expected, message) {
  * extension and easier access
  */
 global.assert = assert;
-
-/**
- * Automatically include
- * all test files '.test.js(x)'
- */
-const context = require.context('.', true, /.+\.test\.jsx?$/);
-context.keys().forEach(context);
-module.exports = context;

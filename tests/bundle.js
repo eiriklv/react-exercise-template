@@ -56,7 +56,6 @@ global.reactStub = React.createClass({
  */
 function assert(actual, expected, message) {
   if (!(actual == expected)) {
-    console.log('message:', message);
     throw new Error(message);
   }
 }
@@ -102,9 +101,6 @@ assert.includesJSX = function(actual, shouldBeIncluded, message) {
 assert.equalJSX = function(actual, expected, message) {
   var actualString = jsxToString(actual);
   var expectedString = jsxToString(expected);
-
-  console.log(actualString, expectedString);
-  console.log(actualString == expectedString)
 
   assert(
     collapse(actualString),

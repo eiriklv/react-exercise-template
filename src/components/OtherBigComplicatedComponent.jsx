@@ -4,6 +4,10 @@
 const React = require('react');
 
 const OtherBigComplicatedComponent = React.createClass({
+  propTypes: {
+    numb: React.PropTypes.number
+  },
+
   render() {
     return (
       <div className="OtherBigComplicatedComponent">

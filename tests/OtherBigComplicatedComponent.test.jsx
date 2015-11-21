@@ -20,7 +20,7 @@ describe('OtherBigComplicatedComponent', () => {
 
     assert.equal(
       findDOMNode(component).textContent,
-      '13'
+      '14'
     );
   });
 
@@ -38,11 +38,9 @@ describe('OtherBigComplicatedComponent', () => {
       expectedElement
     );
 
-    /*
     assert.includesJSX(
       actualElement,
-      '13'
+      '14'
     );
-    */
   });
 });
